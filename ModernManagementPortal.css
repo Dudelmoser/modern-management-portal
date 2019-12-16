@@ -1,0 +1,1313 @@
+/* Icons: https://material.io/resources/icons/?search=t&icon=table_chart&style=baseline */
+
+* {
+    font-family: Segoe UI;
+}
+
+*:first-letter {
+    font-size: inherit !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a.menuItem {
+    color: #444 !important;
+}
+
+a.menuItem:hover, .ndOption > a:hover {
+    background: transparent !important;
+    opacity: .6;
+}
+
+a:focus, input:focus, select:focus {
+    outline: none !important;
+}
+
+body {
+    background: white !important;
+}
+
+div[style*="background: #D3E1EE"] {
+    background: transparent !important;
+}
+
+div[style*="background:#CCCCCC"] {
+    background: transparent !important;
+    border: none !important;
+    border-top: 1px solid #EEE !important;
+    margin-top: 1em;
+}
+
+div[style^="background: #D3E1EE;"] {
+    background: transparent !important;
+}
+
+fieldset {
+    border: .5px solid #eee !important;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #DDD;
+}
+
+hr {
+    display: none;
+}
+
+i {
+    font-style: normal;
+}
+
+img[alt="Caché Logo"] {
+    display: none;
+}
+
+img[src="/csp/bin/RunTime/Module.cxw?CSPSYSimg=created_with_csp"] {
+    display: none;
+}
+
+img[src="/csp/sys/images/closed.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/folder/v1/24px.svg);
+}
+
+/* TODO
+img[src="portal/paste_24.gif"], img[src="portal/copy_24.gif"], img[src="portal/scissors_24.gif"],
+*/
+img[src="/csp/sys/images/closed.gif"], img[src="/csp/sys/images/up1lvl.jpg"], img[src="/csp/sys/images/vw-list.jpg"], img[src="/csp/sys/images/vw-details.jpg"], img[src="images/goto.png"], img[src="images/arrow1D.gif"], img[src="images/arrow1R.gif"], img[src="deepsee/zoom_24.png"], img[src="portal/add_24.gif"], img[src="portal/add_24.gif"]:hover, img[src="portal/loop_24.gif"], img[src="portal/loop_24.gif"]:hover, img[src="deepsee/close_a_24.png"], 
+img[src="deepsee/ds_up_24.gif"], img[src="deepsee/ds_down_24.gif"], img[src="deepsee/ds_forward_24.gif"], img[src="deepsee/ds_back_24.gif"], img[src="deepsee/delete_24.png"], 
+#view_columns, #view_list, #view_icons, #view_cube, #view_table, #view_pivot, #view_chart, #view_both, #view_parallel, #view_stack, #view_tabbed, #view_diagram, #view_monitor, #view_bus,
+.modalGroupCloseButton, .modalGroupCloseButtonHover, .dateTextIcon, .dateTextIcon:hover, .selectorIcon, .selectorIcon:hover {
+    display: inline-block !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    opacity: .5 !important;
+}
+
+img[src="/csp/sys/images/closed.gif"]:hover, img[src="/csp/sys/images/up1lvl.jpg"]:hover, img[src="/csp/sys/images/vw-list.jpg"]:hover, img[src="/csp/sys/images/vw-details.jpg"]:hover, img[src="deepsee/ds_plus_16.gif"]:hover, img[src="deepsee/loop_24.gif"]:hover,
+#view_columns:hover, #view_list:hover, #view_icons:hover, #view_table:hover, #view_pivot:hover, #view_chart:hover, #view_both:hover, #view_parallel:hover, #view_parallel:hover, #view_stack:hover,#view_tabbed:hover, #view_diagram:hover, #view_monitor:hover, #view_bus:hover,
+.modalGroupCloseButton:hover, .modalGroupCloseButtonHover, .dateTextIcon:hover, .selectorIcon:hover {
+    cursor: pointer;
+    opacity: .3;
+}
+
+img[src="/csp/sys/images/up1lvl.jpg"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/keyboard_backspace/v1/24px.svg);
+}
+
+img[src="/csp/sys/images/vw-details.jpg"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_list/v1/24px.svg);
+}
+
+
+img[src="/csp/sys/images/vw-list.jpg"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_headline/v1/24px.svg);
+}
+
+img[src="deepsee/close_a_16.gif"] {
+    border: none !important;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    padding-left: 16px;
+    overflow: hidden;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsaipwErPYjsgVOOJqttdQSvYzlxREodSAmXpmxyJ0QnW2elrdvQ&s);
+    background-size: contain;
+}
+
+img[src="deepsee/close_a_24.png"], img[src="deepsee/close_a_24.png"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/close/v1/24px.svg);
+}
+
+img[src="deepsee/delete_24.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/remove_circle/v1/24px.svg);
+}
+
+img[src="deepsee/ds_back_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/arrow_back/v1/24px.svg);
+}
+
+img[src="deepsee/ds_down_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/arrow_downward/v1/24px.svg);
+}
+
+img[src="deepsee/ds_forward_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/arrow_forward/v1/24px.svg);
+}
+
+img[src="deepsee/ds_plus_16.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/add/v1/24px.svg);
+
+}
+
+img[src="deepsee/ds_plus_16.gif"], img[src="deepsee/loop_24.gif"] {
+    display: inline-block;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    width: 16px !important;
+    height: 16px !important;
+    padding-left: 16px !important; 
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    opacity: .5;
+}
+
+img[src="deepsee/ds_up_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/arrow_upward/v1/24px.svg);
+}
+
+img[src="deepsee/loop_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/refresh/v1/24px.svg);
+}
+
+img[src="deepsee/zoom_24.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/search/v1/24px.svg);
+}
+
+img[src="images/arrow1D.gif"]  {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/expand_less/v1/24px.svg);
+}
+
+img[src="images/arrow1R.gif"]  {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/expand_more/v1/24px.svg);
+}
+
+img[src="images/combobox.png"] {
+    border: none !important;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 20px;
+    padding-left: 16px;
+    overflow: hidden;
+    background: url(https://icons-for-free.com/iconfiles/png/512/arrow+drop+down+36px-131987942843237033.png);
+    background-size: contain;
+}
+
+img[src="images/goto.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/settings_backup_restore/v1/24px.svg)
+}
+
+/* TODO
+img[src="portal/scissors_24.gif"], img[src="portal/scissors_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/cut/v1/24px.svg);
+}
+
+img[src="portal/copy_24.gif"], img[src="portal/copy_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/search/v1/24px.svg);
+}
+
+img[src="portal/paste_24.gif"], img[src="portal/paste_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/search/v1/24px.svg);
+}
+*/
+
+img[src="portal/add_24.gif"], img[src="portal/add_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/add/v1/24px.svg);
+}
+
+img[src="portal/loop_24.gif"], img[src="portal/loop_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/refresh/v1/24px.svg);
+}
+
+img[src="portal/spyware_48.gif"] {
+    display: none;
+}
+
+input[type="button"] {
+    text-transform: uppercase;
+    font-size: 12px;
+    background: transparent !important;
+    color: #444 !important;
+    font-weight: bold;
+    border: none !important;
+    text-align: left !important;
+    padding: 11px 22px;
+}
+
+input[type="button"]:focused {
+    border: none !important;
+}
+
+input[type="button"]:hover {
+    opacity: .6;
+}
+
+input[type="text"], input[type="password"], textarea, select, 
+.select, .treeSelect, .listBox, .navColorSet {
+    border: 1px solid #DDD !important;
+    color: #444 !important;
+    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: none !important;
+}
+
+legend {
+    background: transparent !important;   
+}
+
+.login {
+    background: transparent !important;
+}
+
+pre {
+    background: transparent !important;
+}
+
+td[bgcolor="#CCCCFF"] {
+    background: transparent !important;
+}
+
+/* FIXME */
+td[style*="background-color: lightgrey"] {
+    background: transparent !important;
+}
+
+text.hostLabel {
+    overflow: hidden !important;
+}
+
+
+.Alert {
+    background: transparent !important;
+    color: #ca0;
+}
+
+.AutoForm, .EditForm {
+    padding: 1em;
+    background: transparent !important;
+    border: none !important;
+}
+
+.DetailLink {
+    color: #00afab !important;
+    text-decoration: none !important;
+}
+
+.EvenRow {
+    background: transparent !important;
+}
+
+.HSselector td:first-child, .HSselector img {
+    width: 32px;
+}
+
+.HSselector {
+    background: transparent !important;
+}
+
+.HSselectorItem {
+    background: transparent;
+}
+
+.HTMLGroup, .HTMLGroupLabel, .HTMLDashboardDetail th {
+    background: transparent !important;
+}
+
+.HTMLMeterStatusWarning {
+    background: transparent !important;
+    color: #ca0;
+}
+
+.MonitorWrapper {
+    border: none !important;
+}
+
+.NSSelected {
+    color: #2c2c96 !important;
+    background: transparent !important;
+}
+
+.OddRow {
+    background: #FAFAFA !important;
+}
+
+.PropRect, .PropRectSelected {
+    stroke: none;
+    fill: none;
+}
+
+.Text > div {
+    border: none !important;
+}
+
+.WarningTable {
+    padding: 1em;
+    background: #FFEEEE !important;
+    border: none !important;
+}
+
+.bookCover {
+    border: none !important;
+    padding: 12px;
+    box-shadow: none !important;
+}
+
+.bookCover-activate {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.bookCover-activate:hover {
+    background: transparent !important;
+    opacity: .8 !important;
+} 
+
+.bookCoverHeader {
+    background: transparent !important;
+    color: #356b8d;
+    font-weight: bold;
+}
+
+.boxedArea {
+    border: 1px solid #EEE !important;
+}
+
+.calendarDisabled {
+    color: #DDD !important;
+}
+
+.calendarGap, .calendarEmpty, .calendarDisabled, .calendarLink, .calendarLink:hover, .calendar th {
+    background: transparent !important;
+}
+
+.canvas {
+    stroke: none !important;
+}
+
+.charGroup {
+    border: none !important;
+}
+
+.comboboxInput {
+    border: .5px solid grey !important;
+    height: 16px;
+}
+
+.commandButton, a.DetailCommand, .commandButtonGray, .button, #btnOK input, input[type="submit"], .portalTitleLink {
+    font-weight: bold;
+    font-size: 12px;
+    border: none !important;
+    color: #00afab !important;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+}
+
+.commandButton:hover, a.DetailCommand:hover, .commandButtonGray:hover, .button:hover, #btnOK input:hover, .portalTitleLink:hover {
+    opacity: .8;
+    color: #00afab;
+    background: transparent;
+}
+
+.commandButtonDisabled, .commandButtonDisabled:hover {
+    font-weight: 700;
+    border: none !important;
+    color: #CCC !important;
+    background: transparent !important;
+}
+
+.commandButton[content="Go"] {
+    background: red !important;
+}
+
+.contentsOuter, .contentsOuterNoBorder {
+    background: transparent !important;
+    border: none !important;
+}
+
+.contextMenu {
+    border: none !important;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.csMenuBar .csMenuBarItem:first-child > .csActiveMenuItem + div {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    color: #00afab;
+}
+
+.csMenuBar {
+    border: none;
+    background: none;
+}
+
+.csMenuSeparator {
+    width: 100% !important;
+    left: 0 !important;
+    height: 1px !important;
+    background: #EEE;
+    border: none !important;
+}
+
+.dataGrid {
+    border: none !important;
+    background: transparent !important;
+}
+
+.dateTextIcon, .dateTextIcon:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/date_range/v1/24px.svg)
+}
+
+.detailTable {
+    background: transparent !important;
+}
+
+.detailTitle, #mainGroup td, #mainGroup div {
+    background: transparent !important;
+}
+
+.dgNub, .dgHdr, .dgCell {
+    background: transparent !important;
+    border: none !important;
+}
+
+.dgSelector, .dgSelectorFocus {
+    border-width: 1px !important;
+    margin-left: 1px;
+    border-radius: 0;
+    padding-right: 1px;
+    padding-top: 2px;
+}
+
+.dgmProductionRunning, .dgmProductionTroubled, .dgmProductionSuspended {
+    border: none !important;
+    padding: 4px !important;
+}
+
+.dragGroup {
+    background: transparent !important;
+}
+
+.dsCoverDiv {
+    border: 1px solid #eee !important;
+}
+
+.dsPivotEnclosingDiv {
+    background: transparent !important;
+}
+
+.dsWidgetHeader {
+    background: none !important;
+}
+
+.dslegendDiv {
+    border: none !important;
+    border-left: 1px solid #eee !important;
+}
+
+.dsptcHeaderDiv, #filterGroup {
+    background: transparent !important;
+}
+
+.dsptcHeaderTable {
+    background: #EEE !important;
+}
+
+.dynaGridDisabled, .dynaGridLabel, .dynaGridColumn, .dynaGridRow, .dynaGridWrapper {
+    background: transparent !important;
+    border: none !important;
+}
+
+.expandoNode > a:hover {
+    background: transparent !important;
+}
+
+.fieldSet {
+    background: transparent !important;
+}
+
+.fieldSetDisabled {
+    opacity: .5;
+    background: transparent !important;
+}
+
+.finderColumn {
+    border-right: 1px solid #EEE;
+}
+
+.finderDetailColumn img {
+    display: none;
+}
+
+.finderItem > a:hover, .finderItemOdd > a:hover, .HSselectorsub a:hover {
+    background: transparent !important;
+    opacity: .6;
+} 
+
+.finderItem, .finderItemOdd, .tpOdd, .tpBody {
+    background: transparent !important;
+    border: none !important;
+}
+
+.finderItem>a>span {
+    text-decoration: none !important;
+}
+
+.finderItemDisabled {
+    color: gray !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.finderItemSelected, .finderItemSelected a {
+    background: transparent !important;
+    color: #2c2c96 !important;
+    border: none !important;
+}
+
+.group {
+    background: transparent !important;
+}
+
+.group {
+    background: white;
+}
+
+.iconHover {
+    background: transparent !important;
+}
+
+.itemNormal {
+    stroke: none;
+}
+
+.itemRectSelect {
+    stroke: none !important;
+}
+
+.itemStopped, .itemRunning, .itemDisabled, .itemError, .itemRetrying, .itemInactive {
+    stroke: none;
+}
+
+.lookoutTab {
+    background:transparent !important;
+}
+
+.menuPanel, #searchPanel {
+    background: transparent !important;
+}
+
+.modalGroup {
+    background: white !important;
+    border: none !important;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+}
+
+.modalGroupBody {
+    top: -4px !important;
+}
+
+.modalGroupCloseButton, .modalGroupCloseButtonHover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/close/v1/24px.svg)
+}
+
+.modalGroupTitle td {
+    color: gray !important;
+    font-weight: normal;
+}
+
+.modalGroupTitle {
+    border-bottom: none !important;
+}
+
+.modelError {
+    background: transparent !important;
+}
+
+.modelRowGroups {
+    background: transparent !important;
+}
+
+.nav-arrow-left {
+    left: 12px;
+}
+
+.nav-arrow-left, .nav-arrow-left::before, .nav-arrow-left::after,
+.navChoice, .navChoiceSelected {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #00afab;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 !important;
+}
+
+.navBackground {
+    background: transparent !important;
+}
+
+.navBody > div:first-child {
+    background: transparent !important;
+}
+
+.navChoiceSelected {
+    color: #2c2c96 !important;
+}
+
+.navHeader {
+    background: transparent !important;
+    color: #356b8d !important;
+    text-shadow: none !important;
+}
+
+.navMasterPanel {
+    border: none !important;
+}
+
+.navSliderThumb {
+    background: #aaa !important;
+}
+
+.navSliderTrack {
+    border: none !important;
+    background: #ddd !important;
+    margin-top: 1px;
+}
+
+.navWrapper {
+    background: transparent !important;
+}
+
+.ndMainSub {
+    visibility: hidden;
+}
+
+.ndMainTitle {
+    text-shadow: none;
+}
+
+.ndMainTitle:first-letter {
+    font-size: inherit;
+}
+
+.ndTitle {
+    border: none !important;
+}
+
+.portalLogoBox * {
+    visibility: hidden;
+}
+
+.portalLogoBox {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    height: 24px;
+    width: 200px;
+    background-image: url(portal/HealthShareLogo210x50.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.portalTitle {
+    border: none;
+    display: flex;
+    padding-top: 12px;
+    background: #f5f5f5 !important;
+}
+
+.portalTitleInfoBox {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: 90px;
+    bottom: inherit;
+}
+
+.portalTitleInfoVal {
+    color: #2F2A95 !important;
+    background: transparent !important;
+    font-weight: normal;
+}
+
+.portalTitleLink {
+    color: #888 !important;
+}
+
+.portalTitleMenuBox > span {
+    visibility: hidden;
+}
+
+.portalTitleMenuBox {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 100px;
+}
+
+.resizeBar, .vtResizeBar {
+    display: block !important;
+}
+
+.ribbonTitle {
+    background: none;
+    text-shadow: none;
+    color: #888;
+    text-align: right;
+}
+
+.schedulePaneHeader, .schedulePaneDayHeader, .schedulePane {
+    background: transparent !important;
+    border: none !important;
+}
+
+.searchStatus {
+    border: none !important;
+    background: transparent !important;
+    color: #ca0;
+}
+
+.selectorDiv {
+    border: none;
+}
+
+.selectorIcon, .selectorIcon:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/expand_more/v1/24px.svg);
+}
+
+.selectorInner a:hover, .ndLink:hover {
+    background: transparent !important;
+    opacity: .8;
+}
+
+.selectorInner {
+    background: transparent !important;
+}
+
+.selectorInner {
+    border: none !important;
+}
+
+.selectorInnerIMG {
+    width: 32px;
+    margin-right: 16px;
+}
+
+.selectorInnerTD {
+    text-shadow: none !important;
+}
+
+.selectorModalBox {
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    border: none !important;
+}
+
+.selectorOuter,
+.selectorOuterSelected {
+    padding: 0 !important;
+}
+
+.selectorOuterSelected .selectorInnerTD {
+    color: #2c2c96 !important;
+}
+
+.shadow {
+    display: none !important;
+}
+
+.slider-body {
+    stroke: transparent !important;
+}
+
+.stdTitle img {
+    margin-top: 8px;
+    margin-left: 6px;
+    width: 32px;
+    height: 32px;
+}
+
+.stdTitle, .stdTitleInfo {
+    background: transparent !important;
+    color: #356b8d !important;
+}
+
+.tabBarBackTabs {
+    fill: #eee !important;
+    stroke: #eee !important;
+}
+
+.tabBarBaseline {
+    stroke: transparent !important;
+}
+
+.tabBarFrontTab {
+    stroke: #eee !important;
+}
+
+.tabGroupBody, .LayoutTable, .FilterTable {
+    background: transparent !important;
+}
+
+.tabGroupButtonOn {
+    border-bottom: 2px solid #00afab !important;
+}
+
+.tabGroupButtonOn, .tabGroupButtonOff, .tabGroupButtonDisabled {
+    background: transparent !important;
+    font-size: 12px;
+}
+
+.tabGroupGapTd {
+    background: transparent !important;
+}
+
+.title {
+    background: transparent !important;
+    color: #2c2c96 !important;
+}
+
+.tnbrTable {
+    background: transparent !important;
+}
+
+.tnbrPageLinkCurr {
+    background-image: none !important;
+    background: none !important;
+    border: none !important;
+    color: #00afab !important;
+}
+
+.tnbrPagingButtons {
+    border: 1px solid white !important;
+}
+
+.toolRibbon .ribbonLabel {
+    display: none;
+}
+
+.toolRibbon td:first-child {
+    width: 16px !important;
+}
+
+.toolRibbon {
+    border: none !important;
+}
+
+.tpEven {
+    background: #FAFAFA !important;
+}
+
+.tpHead th {
+    padding-top: 12px;
+    background: transparent !important;
+}
+
+.tpSelected {
+    background: transparent !important;
+}
+
+.tpTable caption, .MonitorCaption {
+    background: transparent !important;
+    border: none !important;
+}
+
+.tpTable {
+    border-collapse: collapse;
+}
+
+.tpTable {
+    margin-top: 12px;
+}
+
+.tpTable, .tpTable th, .tpTable td, .tabGroupButtonOn, .tabGroupButtonOff, .tabGroupBody, .tabGroupExtra, .tnbrPagingButtons, .dateTextDiv, .svgFrame, .LastUpdate,
+iframe, table, th, td, h2,
+#table, #diagramHeader, #searchGroup, #detailsGroup, #queueGroup, #formGroup {
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+.viewIconBar {
+    display: flex;
+}
+
+.viewIconHover {
+    border: 2px solid transparent;
+}
+
+.viewIconSelected {
+    opacity: 1 !important;
+    filter: invert() sepia(1) hue-rotate(90deg) saturate(100) brightness(.7);
+}
+
+.vtResizeBar, #horizBar {
+    height: 1px !important;
+}
+
+.wizardBox {
+    background: transparent !important;
+    border: none !important;
+}
+
+.worklist {
+    border: none !important;
+}
+
+.worklistDiv {
+    border: 1px solid #eee !important;
+    border-radius: 0;
+}
+
+.worklistHeaderDiv {
+    border: none !important;
+}
+
+.worklistIcon img, .worklistIconCurrent img {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.worklistIconCurrent img {
+    filter: invert() sepia(1) hue-rotate(120deg) saturate(100) brightness(.7);
+}
+
+.worklistIconCurrent {
+    background: transparent !important;
+}
+
+.zenHPaneHandle {
+    width: 2px !important;
+    border: none !important;
+    background: #ddd !important;
+}
+
+.zenLabel {
+    padding-left: 0 !important;
+}
+
+#alertDetailsWrapper, #menuDiv, #alertMenu, #dataDiv, .menuItem, .bucketItem {
+    background: transparent !important;
+    border: none !important;
+}
+
+#commandButtonRemove,
+#command_btnDelete,
+#command_cmdRemove,
+#command_cmdDelete,
+#command_cmdRecover {
+    background: transparent !important;
+    border: none !important;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#commandButtonRemove:hover,
+#command_btnDelete:hover,
+#command_cmdRemove:hover,
+#command_cmdDelete:hover,
+#command_cmdRecover:hover {
+    opacity: .8;
+} 
+
+#command_btnDelete {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#command_btnDelete,
+#command_cmdRecover > nobr,
+#command_cmdRemove > nobr,
+#command_cmdDelete > nobr {
+    color: #f44;
+}
+
+#componentName {
+    color: #356b8d !important;
+}
+
+#contentsLeft, .navDisclosureBar, #foldersHeader {
+    background: transparent !important;
+}
+
+#cubeName {
+    background: transparent !important;
+}
+
+#cubeName, #cubeNameDiv, #cubeModeDiv {
+    border: none !important;
+}
+
+#dataDiv, #bucketMenu {
+    border-left: 1px solid #eee !important;
+}
+
+#dataSource {
+    border-top: none !important;
+    border-right: 1px solid #eee !important;
+}
+
+#detailGroup {
+    background: none !important;
+}
+
+#detailsGroup, #searchGroup, #queueGroup {
+    background: transparent !important;   
+}
+
+#diagramHeader {
+    background: transparent !important;
+}
+
+#dtlTable, #dtlTableBody {
+    border: none !important;
+}
+
+#filterGroup {
+    height: 2px;
+    padding: 0 !important;
+    border: none !important;
+    background: #ddd !important;
+}
+
+#finder > div:nth-child(4) > div {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#finder > div:nth-child(4) {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#fldPurge {
+    border: none !important;
+    background: #fafafa !important;
+}
+
+#foldersFooter {
+    background: transparent !important;
+}
+
+#footer {
+    background: transparent !important;
+}
+
+#footer {
+    border-top: 1px solid #eee;
+}
+
+#formGroup {
+    background: transparent;
+}
+
+#gp1 {
+    background: transparent !important;
+    border: none !important;
+}
+
+#groupTree {
+    border: none !important;
+}
+
+#headerRect, .Spine {
+    fill: #eee !important;
+    stroke: none !important;
+}
+
+#helpCommandArrow {
+    background: transparent;
+    color: #00afab;
+}#helpPanel {
+    border-color: #eee !important;
+    background: transparent !important;
+}
+
+#helpPanelContents * {
+    text-shadow: none !important;
+}
+
+#hsSideBar {
+    background: transparent !important;
+    border: none !important;
+}
+
+#idSize, #idNewGlobal {
+    border: none !important;
+}
+
+#leftGroup, #leftGroup div {
+    background: transparent !important;
+    width: 400px !important;
+}
+
+#logFile {
+    border: 1px solid #eee;
+}
+
+#mainMenu {
+    position: absolute !important;
+    top: 0px !important;
+}
+
+#menuBar {
+    background: transparent !important;
+    border: none !important;
+}
+
+#messagePanel {
+    border: none;
+    background: transparent;
+    overflow-x: scroll;
+    height: 100% !important;
+}
+
+#modelTableBody {
+    border: none !important;
+}
+
+#modelTableHeader {
+    background: transparent !important;
+}
+
+#propertyGroup {
+    background: transparent !important;
+    border: none !important;
+}
+
+#propertyPane {
+    border: none !important;
+    border-left: .5px solid #eee !important;
+    background: transparent !important;
+}
+
+#propertyTitle {
+    background: transparent !important;
+}
+
+#qmsrHelp img {
+    display: none;
+}
+
+#qmsrHelp {
+    background: transparent !important;
+    border-color: #eee;
+}
+
+#searchExpanderArrow, #detailExpanderArrow {
+    background: transparent !important;
+    color: #00afab;
+}
+
+#selectionPane {
+    background: transparent !important;
+}
+
+#selector {
+    position: relative;
+    top: 28px;
+    left: -14px;
+}
+
+#spanArrow {
+    color: #00afab !important;
+    text-shadow: none !important;
+}
+
+#titleGroup {
+    background: #f5f5f5 !important;
+}
+
+#titleTab {
+    color: #404040;
+    text-shadow: none;
+    background: transparent;
+}
+
+#titleTab.portalTitleTabBox {
+    display: none;
+}
+
+#treeWrapper {
+    background: #FAFAFA !important;
+    box-shadow: inset 0 0 8px rgba(0,0,0,.05);
+}
+
+#triggerPurgeCQ, #special {
+    background: transparent !important;
+}
+
+#vertBar {
+    width: 1px;
+}
+
+#view_bus {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/vertical_split/v1/24px.svg);
+}
+
+#view_chart {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/insert_chart/v1/24px.svg);
+}
+
+#view_columns, #view_parallel {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_column/v1/24px.svg);
+}
+
+#view_cube {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/featured_video/v1/24px.svg);
+}
+
+#view_diagram {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/show_chart/v1/24px.svg);
+}
+
+#view_icons {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_module/v1/24px.svg);
+}
+
+#view_list {
+    order: 3;
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_headline/v1/24px.svg);
+}
+
+#view_monitor {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_module/v1/24px.svg);
+}
+
+#view_pivot {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/table_chart/v1/24px.svg);
+}
+
+#view_stack {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/view_stream/v1/24px.svg);
+}
+
+#view_tabbed {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/tab/v1/24px.svg);
+}
+
+#view_table {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/table_chart/v1/24px.svg);
+}
+
+/* FIXME */
+#zen4 {
+    left: 8px !important;
+    top: 10px !important;
+}
+
+#zenBackground, .rnavBackground, .slider-body {
+    background: transparent !important;
+    fill: transparent !important;
+}
+
