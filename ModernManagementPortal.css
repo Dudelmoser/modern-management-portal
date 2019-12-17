@@ -1,5 +1,30 @@
 /* Icons: https://material.io/resources/icons/?search=t&icon=table_chart&style=baseline */
 
+:root {
+    /*
+    --hue: 100deg;
+    --primary-color: #00afab;
+    --accent-color: #2c2c96;
+    */
+    --hue: 10deg;
+    --primary-color: #88c756;
+    --accent-color: #2c2c96;
+    --header-color: #356b8d;
+    --warning-color: #ca0;
+    --error-color: #f44336;
+    --text-color: #444;
+    --subtle-text-color: #888;
+    --neutral-color: #ddd;
+    --border-color: #eee;
+    --subtle-bg-color: #fafafa;
+    --hover-opacity: .7;
+    --icon-opacity: .5;
+    --disabled-opacity: .5;
+    --border: 1px solid var(--border-color) !important;
+    --input-border: 1px solid var(--neutral-color) !important;
+    --box-shadow: 2px 2px 4px rgba(0,0,0,.2) !important;
+}
+
 * {
     font-family: Segoe UI;
 }
@@ -13,12 +38,17 @@ a {
 }
 
 a.menuItem {
-    color: #444 !important;
+    color: var(--text-color) !important;
+}
+
+
+a.menuItem:hover {
+    margin: 1px !important;
 }
 
 a.menuItem:hover, .ndOption > a:hover {
     background: transparent !important;
-    opacity: .6;
+    opacity: var(--hover-opacity);
 }
 
 a:focus, input:focus, select:focus {
@@ -36,7 +66,7 @@ div[style*="background: #D3E1EE"] {
 div[style*="background:#CCCCCC"] {
     background: transparent !important;
     border: none !important;
-    border-top: 1px solid #EEE !important;
+    border-top: var(--border);
     margin-top: 1em;
 }
 
@@ -45,13 +75,13 @@ div[style^="background: #D3E1EE;"] {
 }
 
 fieldset {
-    border: .5px solid #eee !important;
+    border: var(--border);
 }
 
 hr {
     border: none;
     height: 1px;
-    background: #DDD;
+    background: var(--neutral-color);
 }
 
 hr {
@@ -88,6 +118,10 @@ img[src="deepsee/ds_back_24.gif"],
 img[src="deepsee/zoom_24.png"],
 img[src="images/arrow1D.gif"],
 img[src="images/arrow1R.gif"],
+img[src="images/deepsee/binoculars_24.png"],
+img[src="images/deepsee/ds_up_24.gif"],
+img[src="images/deepsee/ds_down_24.gif"],
+img[src="images/deepsee/refresh_24.png"],
 img[src="images/goto.png"],
 img[src="portal/add_24.gif"],
 img[src="portal/add_24.gif"]:hover,
@@ -125,13 +159,15 @@ img[src="portal/software_development_48.gif"],
     background-size: cover !important;
     background-repeat: no-repeat !important;
     border: none !important;
-    opacity: .5 !important;
+    opacity: var(--icon-opacity) !important;
 }
 
 img[src="/csp/broker/images/RtArrow.png"],
 img[src="deepsee/close_a_16.gif"],
 img[src="deepsee/ds_plus_16.gif"],
-img[src="deepsee/loop_24.gif"]
+img[src="deepsee/loop_24.gif"],
+img[src="portal/disc_down_16.gif"],
+img[src="portal/disc_up_16.gif"]
 {
     display: inline-block;
     overflow: hidden !important;
@@ -142,7 +178,7 @@ img[src="deepsee/loop_24.gif"]
     background-size: cover !important;
     background-repeat: no-repeat !important;
     border: none !important;
-    opacity: .5;
+    opacity: var(--icon-opacity) !important;
 }
 
 img[src="/csp/sys/images/closed.gif"]:hover,
@@ -171,7 +207,6 @@ img[src="deepsee/loop_24.gif"]:hover,
 #view_table:hover
 {
     cursor: pointer;
-    opacity: .3;
 }
 
 img[src="/csp/broker/images/RtArrow.png"] {
@@ -242,12 +277,36 @@ img[src="images/arrow1R.gif"]  {
     background: url(https://fonts.gstatic.com/s/i/materialicons/expand_more/v1/24px.svg);
 }
 
+img[src="images/deepsee/binoculars_24.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/search/v1/24px.svg);
+}
+
+img[src="images/deepsee/ds_down_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/arrow_downward/v1/24px.svg)
+}
+
+img[src="images/deepsee/ds_up_24.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/arrow_upward/v1/24px.svg)
+}
+
+img[src="images/deepsee/refresh_24.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/refresh/v1/24px.svg);
+}
+
 img[src="images/goto.png"] {
     background: url(https://fonts.gstatic.com/s/i/materialicons/settings_backup_restore/v1/24px.svg)
 }
 
 img[src="portal/add_24.gif"], img[src="portal/add_24.gif"]:hover {
     background: url(https://fonts.gstatic.com/s/i/materialicons/add/v1/24px.svg);
+}
+
+img[src="portal/disc_up_16.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/chevron_right/v1/24px.svg);
+}
+
+img[src="portal/disc_down_16.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/expand_more/v1/24px.svg);
 }
 
 img[src="portal/loop_24.gif"], img[src="portal/loop_24.gif"]:hover {
@@ -286,12 +345,6 @@ img[src="portal/paste_24.gif"], img[src="portal/paste_24.gif"]:hover {
 */
 
 input[type="button"] {
-    text-transform: uppercase;
-    font-size: 12px;
-    background: transparent !important;
-    color: #444 !important;
-    font-weight: bold;
-    border: none !important;
     text-align: left !important;
     padding: 11px 22px;
 }
@@ -301,9 +354,10 @@ input[type="button"]:focused {
 }
 
 input[type="button"]:hover {
-    opacity: .6;
+    opacity: var(--hover-opacity);
 }
 
+input[type="button"],
 input[type="submit"],
 .button,
 .commandButton,
@@ -318,7 +372,7 @@ a.DetailCommand,
     font-weight: bold;
     font-size: 12px;
     border: none !important;
-    color: #00afab !important;
+    color: var(--primary-color) !important;
     background: transparent !important;
 }
 
@@ -332,15 +386,15 @@ a.DetailCommand:hover,
 #EnsException_Details_expando:hover
 {
     cursor: pointer;
-    opacity: .8;
-    color: #00afab !important;
+    opacity: var(--hover-opacity);
+    color: var(--primary-color) !important;
     background: transparent !important;
 }
 
 input[type="text"], input[type="password"], textarea, select, 
 .select, .treeSelect, .listBox, .navColorSet {
-    border: 1px solid #DDD !important;
-    color: #444 !important;
+    border: var(--input-border);
+    color: var(--text-color) !important;
     margin-right: 6px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -375,7 +429,7 @@ text.hostLabel {
 
 .Alert {
     background: transparent !important;
-    color: #ca0;
+    color: var(--warning-color);
 }
 
 .AutoForm, .EditForm {
@@ -385,7 +439,7 @@ text.hostLabel {
 }
 
 .DetailLink {
-    color: #00afab !important;
+    color: var(--primary-color) !important;
     text-decoration: none !important;
 }
 
@@ -393,7 +447,15 @@ text.hostLabel {
     background: transparent !important;
 }
 
+.ErrorBox {
+    border: none !important;
+}
+
 .EvenRow {
+    background: transparent !important;
+}
+
+.ExecuteTable {
     background: transparent !important;
 }
 
@@ -415,7 +477,15 @@ text.hostLabel {
 
 .HTMLMeterStatusWarning {
     background: transparent !important;
-    color: #ca0;
+    color: var(--warning-color);
+}
+
+.InfoTable {
+    background: transparent !important;
+}
+
+.InfoTable a[name="#top"] {
+    color: var(--header-color) !important;
 }
 
 .MonitorWrapper {
@@ -423,12 +493,12 @@ text.hostLabel {
 }
 
 .NSSelected {
-    color: #2c2c96 !important;
+    color: var(--accent-color) !important;
     background: transparent !important;
 }
 
 .OddRow {
-    background: #FAFAFA !important;
+    background: var(--subtle-bg-color) !important;
 }
 
 .PagingButtons {
@@ -463,26 +533,26 @@ text.hostLabel {
 
 .bookCover-activate:hover {
     background: transparent !important;
-    opacity: .8 !important;
+    opacity: var(--hover-opacity) !important;
 } 
 
 .bookCoverHeader {
     background: transparent !important;
-    color: #356b8d;
+    color: var(--header-color);
     font-weight: bold;
 }
 
 .boxedArea {
-    border: 1px solid #EEE !important;
+    border: var(--border);
 }
 
 .busStrip {
     stroke: none;
-    fill: #ddd;
+    fill: var(--neutral-color);
 }
 
 .calendarDisabled {
-    color: #DDD !important;
+    color: var(--neutral-color) !important;
 }
 
 .calendarGap, .calendarEmpty, .calendarDisabled, .calendarLink, .calendarLink:hover, .calendar th {
@@ -498,7 +568,7 @@ text.hostLabel {
 }
 
 .comboboxInput {
-    border: .5px solid grey !important;
+    border: var(--border);
     height: 16px;
 }
 
@@ -510,7 +580,7 @@ text.hostLabel {
 }
 
 .commandButton[content="Go"] {
-    background: #F44336 !important;
+    background: var(--error-color) !important;
 }
 
 .contentsOuter, .contentsOuterNoBorder {
@@ -520,17 +590,17 @@ text.hostLabel {
 
 .contextMenu {
     border: none !important;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
 }
 
 .csMenuBar .csMenuBarItem:first-child > .csActiveMenuItem + div {
     text-transform: uppercase !important;
     font-weight: bold !important;
-    color: #00afab;
+    color: var(--primary-color);
 }
 
 .csMenuBar .csMenuBarItem:first-child > .csActiveMenuItem + div:hover {
-    opacity: .6;
+    opacity: var(--hover-opacity);
 }
 
 .csMenuBar {
@@ -542,7 +612,7 @@ text.hostLabel {
     width: 100% !important;
     left: 0 !important;
     height: 1px !important;
-    background: #EEE;
+    background: var(--border-color);
     border: none !important;
 }
 
@@ -582,7 +652,7 @@ text.hostLabel {
 }
 
 .dgmProductionTroubled {
-    background: #F44336 !important;
+    background: var(--error-color) !important;
 }
 
 .dragGroup {
@@ -590,7 +660,7 @@ text.hostLabel {
 }
 
 .dsCoverDiv {
-    border: 1px solid #eee !important;
+    border: var(--border);
 }
 
 .dsPivotEnclosingDiv {
@@ -603,7 +673,7 @@ text.hostLabel {
 
 .dslegendDiv {
     border: none !important;
-    border-left: 1px solid #eee !important;
+    border-left: var(--border);
 }
 
 .dsptcHeaderDiv, #filterGroup {
@@ -611,12 +681,28 @@ text.hostLabel {
 }
 
 .dsptcHeaderTable {
-    background: #EEE !important;
+    background: var(--border-color) !important;
 }
 
 .dynaGridDisabled, .dynaGridLabel, .dynaGridColumn, .dynaGridRow, .dynaGridWrapper {
     background: transparent !important;
     border: none !important;
+}
+
+.dynaTreeIcon {
+    display: none;
+}
+
+.dynaTreeItem {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dynaTreeItemSelected, .dynaTreeItem:hover {
+    border: none !important;
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .expandoNode > a:hover {
@@ -628,21 +714,25 @@ text.hostLabel {
 }
 
 .fieldSetDisabled {
-    opacity: .5;
+    opacity: var(--disabled-opacity);
     background: transparent !important;
 }
 
 .finderColumn {
-    border-right: 1px solid #EEE;
+    border-right: var(--border);
 }
 
 .finderDetailColumn img {
     display: none;
 }
 
+.finderDetailColumn .ndLabel {
+    margin-top: 4em;
+}
+
 .finderItem > a:hover, .finderItemOdd > a:hover, .HSselectorsub a:hover {
     background: transparent !important;
-    opacity: .6;
+    opacity: var(--hover-opacity);
 } 
 
 .finderItem, .finderItemOdd, .tpOdd, .tpBody {
@@ -655,14 +745,14 @@ text.hostLabel {
 }
 
 .finderItemDisabled {
-    color: gray !important;
+    color: var(--neutral-color) !important;
     background: transparent !important;
     border: none !important;
 }
 
 .finderItemSelected, .finderItemSelected a {
     background: transparent !important;
-    color: #2c2c96 !important;
+    color: var(--accent-color) !important;
     border: none !important;
 }
 
@@ -684,7 +774,7 @@ text.hostLabel {
 
 .itemPartner {
     stroke: none;
-    fill: #ddd;
+    fill: var(--neutral-color);
 }
 
 .itemRectSelect {
@@ -713,7 +803,7 @@ text.hostLabel {
 .listBoxItemSelected:hover
 {
     background: none !important;
-    outline: none !important;
+    border: none !important;
 }
 
 .listBoxItem:active,
@@ -728,7 +818,7 @@ text.hostLabel {
 .listBoxItemFocus:focus,
 .listBoxItemFocus:hover
 {
-    color: #2c2c96 !important;
+    color: var(--accent-color) !important;
 }
 
 .lookoutTab {
@@ -758,7 +848,7 @@ text.hostLabel {
 }
 
 .modalGroupTitle td {
-    color: gray !important;
+    color: var(--neutral-color) !important;
     font-weight: normal;
 }
 
@@ -770,8 +860,12 @@ text.hostLabel {
     background: transparent !important;
 }
 
-.modelRowGroups {
+.modelRowGroups, .modelRowGroupsSelected {
     background: transparent !important;
+}
+
+.modelRowGroupsSelected {
+    color: var(--accent-color);
 }
 
 .nav-arrow-left {
@@ -784,7 +878,7 @@ text.hostLabel {
     border: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
-    color: #00afab;
+    color: var(--primary-color);
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -800,12 +894,12 @@ text.hostLabel {
 }
 
 .navChoiceSelected {
-    color: #2c2c96 !important;
+    color: var(--accent-color) !important;
 }
 
 .navHeader {
     background: transparent !important;
-    color: #356b8d !important;
+    color: var(--header-color) !important;
     text-shadow: none !important;
 }
 
@@ -819,7 +913,7 @@ text.hostLabel {
 
 .navSliderTrack {
     border: none !important;
-    background: #ddd !important;
+    background: var(--neutral-color) !important;
     margin-top: 1px;
 }
 
@@ -841,6 +935,14 @@ text.hostLabel {
 
 .ndTitle {
     border: none !important;
+}
+
+.optionSelected {
+    background: transparent !important;
+}
+
+.optionSelected > a.menuItem {
+    color: var(--accent-color) !important;
 }
 
 .portalLogoBox * {
@@ -880,13 +982,19 @@ text.hostLabel {
 }
 
 .portalTitleInfoVal {
-    color: #2F2A95 !important;
+    color: var(--accent-color) !important;
     background: transparent !important;
     font-weight: normal;
 }
 
 .portalTitleLink {
-    color: #888 !important;
+    color: var(--subtle-text-color) !important;
+    font-family: Segoe UI !important;
+}
+
+.portalTitleLink:hover {
+    color: var(--subtle-text-color) !important;
+    opacity: var(--hover-opacity);
 }
 
 .portalTitleMenuBox > span {
@@ -905,6 +1013,7 @@ text.hostLabel {
 }
 
 .ribbonTitle {
+    font-size: 18px !important;
     background: none;
     text-shadow: none;
     color: #888;
@@ -919,7 +1028,7 @@ text.hostLabel {
 .searchStatus {
     border: none !important;
     background: transparent !important;
-    color: #ca0;
+    color: var(--warning-color);
 }
 
 .selectorDiv {
@@ -932,7 +1041,7 @@ text.hostLabel {
 
 .selectorInner a:hover, .ndLink:hover {
     background: transparent !important;
-    opacity: .8;
+    opacity: var(--hover-opacity);
 }
 
 .selectorInner {
@@ -953,7 +1062,7 @@ text.hostLabel {
 }
 
 .selectorModalBox {
-    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
     border: none !important;
 }
 
@@ -963,7 +1072,7 @@ text.hostLabel {
 }
 
 .selectorOuterSelected .selectorInnerTD {
-    color: #2c2c96 !important;
+    color: var(--accent-color) !important;
 }
 
 .shadow {
@@ -983,12 +1092,12 @@ text.hostLabel {
 
 .stdTitle, .stdTitleInfo {
     background: transparent !important;
-    color: #356b8d !important;
+    color: var(--header-color) !important;
 }
 
 .tabBarBackTabs {
-    fill: #eee !important;
-    stroke: #eee !important;
+    fill: var(--border-color) !important;
+    stroke: var(--border-color) !important;
 }
 
 .tabBarBaseline {
@@ -996,20 +1105,29 @@ text.hostLabel {
 }
 
 .tabBarFrontTab {
-    stroke: #eee !important;
+    stroke: var(--border-color) !important;
 }
 
 .tabGroupBody, .LayoutTable, .FilterTable {
     background: transparent !important;
 }
 
-.tabGroupButtonOn {
-    border-bottom: 2px solid #00afab !important;
+td.tabGroupButtonOn {
+    border-bottom: 2px solid var(--primary-color) !important;
 }
 
 .tabGroupButtonOn, .tabGroupButtonOff, .tabGroupButtonDisabled {
     background: transparent !important;
     font-size: 12px;
+    font-weight: bold;
+}
+
+.tabGroupButtonOff {
+    opacity: .75;
+}
+
+.tabGroupButtonDisabled {
+    opacity: var(--disabled-opacity);
 }
 
 .tabGroupGapTd {
@@ -1018,7 +1136,7 @@ text.hostLabel {
 
 .title {
     background: transparent !important;
-    color: #2c2c96 !important;
+    color: var(--accent-color) !important;
 }
 
 .tnbrTable {
@@ -1029,7 +1147,7 @@ text.hostLabel {
     background-image: none !important;
     background: none !important;
     border: none !important;
-    color: #00afab !important;
+    color: var(--primary-color) !important;
 }
 
 .tnbrPagingButtons {
@@ -1049,7 +1167,7 @@ text.hostLabel {
 }
 
 .tpEven {
-    background: #FAFAFA !important;
+    background: var(--subtle-bg-color) !important;
 }
 
 .tpHead th {
@@ -1074,13 +1192,24 @@ text.hostLabel {
     margin-top: 12px;
 }
 
-.tpTable, .tpTable th, .tpTable td, .tabGroupButtonOn, .tabGroupButtonOff, .tabGroupBody, .tabGroupExtra, .tnbrPagingButtons, .dateTextDiv, .svgFrame, .LastUpdate,
+/* TODO: cleaner */
+.tpTable,
+.tpTable th,
+.tpTable td,
+.tabGroupButtonOn,
+.tabGroupButtonOff,
+.tabGroupBody,
+.tabGroupExtra,
+.tnbrPagingButtons,
+.dateTextDiv,
+.svgFrame,
+.LastUpdate,
 iframe, table, th, td, h2,
 #table, #diagramHeader, #searchGroup, #detailsGroup, #queueGroup, #formGroup {
-    border-left: none !important;
-    border-top: none !important;
-    border-bottom: none !important;
-    border-right: none !important;
+    border-left-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-right-color: transparent !important;
 }
 
 .viewIconBar {
@@ -1093,7 +1222,7 @@ iframe, table, th, td, h2,
 
 .viewIconSelected {
     opacity: 1 !important;
-    filter: invert() sepia(1) hue-rotate(90deg) saturate(100) brightness(.7);
+    filter: invert() sepia(1) hue-rotate(var(--hue)) saturate(100) brightness(.7);
 }
 
 .vtResizeBar, #horizBar {
@@ -1110,7 +1239,7 @@ iframe, table, th, td, h2,
 }
 
 .worklistDiv {
-    border: 1px solid #eee !important;
+    border: var(--border);
     border-radius: 0;
 }
 
@@ -1124,7 +1253,7 @@ iframe, table, th, td, h2,
 }
 
 .worklistIconCurrent img {
-    filter: invert() sepia(1) hue-rotate(120deg) saturate(100) brightness(.7);
+    filter: invert() sepia(1) hue-rotate(var(--hue)) saturate(100) brightness(.7);
 }
 
 .worklistIconCurrent {
@@ -1134,7 +1263,7 @@ iframe, table, th, td, h2,
 .zenHPaneHandle {
     width: 2px !important;
     border: none !important;
-    background: #ddd !important;
+    background: var(--neutral-color) !important;
 }
 
 .zenLabel {
@@ -1163,7 +1292,7 @@ iframe, table, th, td, h2,
 #command_cmdRemove:hover,
 #command_cmdDelete:hover,
 #command_cmdRecover:hover {
-    opacity: .8;
+    opacity: var(--hover-opacity);
 } 
 
 #command_btnDelete {
@@ -1176,11 +1305,11 @@ iframe, table, th, td, h2,
 #command_cmdRecover > nobr,
 #command_cmdRemove > nobr,
 #command_cmdDelete > nobr {
-    color: #F44336;
+    color: var(--error-color);
 }
 
 #componentName {
-    color: #356b8d !important;
+    color: var(--header-color) !important;
 }
 
 #contentsLeft, .navDisclosureBar, #foldersHeader {
@@ -1196,12 +1325,12 @@ iframe, table, th, td, h2,
 }
 
 #dataDiv, #bucketMenu {
-    border-left: 1px solid #eee !important;
+    border-left: var(--border);
 }
 
 #dataSource {
     border-top: none !important;
-    border-right: 1px solid #eee !important;
+    border-right: var(--border);
 }
 
 #detailGroup {
@@ -1216,6 +1345,10 @@ iframe, table, th, td, h2,
     background: transparent !important;
 }
 
+#diagramLabelRect {
+    fill: transparent !important;
+}
+
 #dtlTable, #dtlTableBody {
     border: none !important;
 }
@@ -1224,7 +1357,7 @@ iframe, table, th, td, h2,
     height: 2px;
     padding: 0 !important;
     border: none !important;
-    background: #ddd !important;
+    background: var(--neutral-color) !important;
 }
 
 #finder > div:nth-child(4) > div {
@@ -1240,7 +1373,7 @@ iframe, table, th, td, h2,
 
 #fldPurge {
     border: none !important;
-    background: #fafafa !important;
+    background: var(--subtle-bg-color) !important;
 }
 
 #foldersFooter {
@@ -1252,7 +1385,7 @@ iframe, table, th, td, h2,
 }
 
 #footer {
-    border-top: 1px solid #eee;
+    border-top: var(--border);
 }
 
 #formGroup {
@@ -1269,15 +1402,17 @@ iframe, table, th, td, h2,
 }
 
 #headerRect, .Spine {
-    fill: #eee !important;
+    fill: var(--border-color) !important;
     stroke: none !important;
 }
 
 #helpCommandArrow {
     background: transparent;
-    color: #00afab;
-}#helpPanel {
-    border-color: #eee !important;
+    color: var(--primary-color);
+}
+
+#helpPanel {
+    border-color: var(--border);
     background: transparent !important;
 }
 
@@ -1300,7 +1435,7 @@ iframe, table, th, td, h2,
 }
 
 #logFile {
-    border: 1px solid #eee;
+    border: var(--border);
 }
 
 #mainMenu {
@@ -1335,7 +1470,7 @@ iframe, table, th, td, h2,
 
 #propertyPane {
     border: none !important;
-    border-left: .5px solid #eee !important;
+    border-left: var(--border) !important;
     background: transparent !important;
 }
 
@@ -1349,12 +1484,12 @@ iframe, table, th, td, h2,
 
 #qmsrHelp {
     background: transparent !important;
-    border-color: #eee;
+    border-color: var(--border-color);
 }
 
 #searchExpanderArrow, #detailExpanderArrow {
     background: transparent !important;
-    color: #00afab;
+    color: var(--primary-color);
 }
 
 #selectionPane {
@@ -1368,7 +1503,7 @@ iframe, table, th, td, h2,
 }
 
 #spanArrow {
-    color: #00afab !important;
+    color: var(--primary-color) !important;
     text-shadow: none !important;
 }
 
@@ -1386,8 +1521,12 @@ iframe, table, th, td, h2,
     display: none;
 }
 
+#tree {
+    border-top: none !important;
+}
+
 #treeWrapper {
-    background: #FAFAFA !important;
+    background: var(--subtle-bg-color) !important;
     box-shadow: inset 0 0 8px rgba(0,0,0,.05);
 }
 
