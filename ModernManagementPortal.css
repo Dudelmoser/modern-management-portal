@@ -70,17 +70,52 @@ img[src="/csp/bin/RunTime/Module.cxw?CSPSYSimg=created_with_csp"] {
     display: none;
 }
 
-img[src="/csp/sys/images/closed.gif"] {
-    background: url(https://fonts.gstatic.com/s/i/materialicons/folder/v1/24px.svg);
-}
-
 /* TODO
-img[src="portal/paste_24.gif"], img[src="portal/copy_24.gif"], img[src="portal/scissors_24.gif"],
+img[src="portal/paste_24.gif"],
+img[src="portal/copy_24.gif"],
+img[src="portal/scissors_24.gif"],
 */
-img[src="/csp/sys/images/closed.gif"], img[src="/csp/sys/images/up1lvl.jpg"], img[src="/csp/sys/images/vw-list.jpg"], img[src="/csp/sys/images/vw-details.jpg"], img[src="images/goto.png"], img[src="images/arrow1D.gif"], img[src="images/arrow1R.gif"], img[src="deepsee/zoom_24.png"], img[src="portal/add_24.gif"], img[src="portal/add_24.gif"]:hover, img[src="portal/loop_24.gif"], img[src="portal/loop_24.gif"]:hover, img[src="deepsee/close_a_24.png"], 
-img[src="deepsee/ds_up_24.gif"], img[src="deepsee/ds_down_24.gif"], img[src="deepsee/ds_forward_24.gif"], img[src="deepsee/ds_back_24.gif"], img[src="deepsee/delete_24.png"], 
-#view_columns, #view_list, #view_icons, #view_cube, #view_table, #view_pivot, #view_chart, #view_both, #view_parallel, #view_stack, #view_tabbed, #view_diagram, #view_monitor, #view_bus,
-.modalGroupCloseButton, .modalGroupCloseButtonHover, .dateTextIcon, .dateTextIcon:hover, .selectorIcon, .selectorIcon:hover {
+img[src="/csp/sys/images/closed.gif"],
+img[src="/csp/sys/images/up1lvl.jpg"],
+img[src="/csp/sys/images/vw-details.jpg"],
+img[src="/csp/sys/images/vw-list.jpg"],
+img[src="deepsee/close_a_24.png"], 
+img[src="deepsee/delete_24.png"],
+img[src="deepsee/ds_up_24.gif"],
+img[src="deepsee/ds_down_24.gif"],
+img[src="deepsee/ds_forward_24.gif"],
+img[src="deepsee/ds_back_24.gif"],
+img[src="deepsee/zoom_24.png"],
+img[src="images/arrow1D.gif"],
+img[src="images/arrow1R.gif"],
+img[src="images/goto.png"],
+img[src="portal/add_24.gif"],
+img[src="portal/add_24.gif"]:hover,
+img[src="portal/loop_24.gif"],
+img[src="portal/loop_24.gif"]:hover,
+img[src="portal/report_48.gif"],
+img[src="portal/software_development_48.gif"],
+.dateTextIcon,
+.dateTextIcon:hover,
+.modalGroupCloseButton,
+.modalGroupCloseButtonHover,
+.selectorIcon,
+.selectorIcon:hover,
+#view_both,
+#view_bus,
+#view_chart,
+#view_columns,
+#view_cube,
+#view_diagram,
+#view_icons,
+#view_list,
+#view_monitor,
+#view_parallel,
+#view_pivot,
+#view_stack,
+#view_tabbed,
+#view_table
+{
     display: inline-block !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
@@ -93,11 +128,58 @@ img[src="deepsee/ds_up_24.gif"], img[src="deepsee/ds_down_24.gif"], img[src="dee
     opacity: .5 !important;
 }
 
-img[src="/csp/sys/images/closed.gif"]:hover, img[src="/csp/sys/images/up1lvl.jpg"]:hover, img[src="/csp/sys/images/vw-list.jpg"]:hover, img[src="/csp/sys/images/vw-details.jpg"]:hover, img[src="deepsee/ds_plus_16.gif"]:hover, img[src="deepsee/loop_24.gif"]:hover,
-#view_columns:hover, #view_list:hover, #view_icons:hover, #view_table:hover, #view_pivot:hover, #view_chart:hover, #view_both:hover, #view_parallel:hover, #view_parallel:hover, #view_stack:hover,#view_tabbed:hover, #view_diagram:hover, #view_monitor:hover, #view_bus:hover,
-.modalGroupCloseButton:hover, .modalGroupCloseButtonHover, .dateTextIcon:hover, .selectorIcon:hover {
+img[src="/csp/broker/images/RtArrow.png"],
+img[src="deepsee/close_a_16.gif"],
+img[src="deepsee/ds_plus_16.gif"],
+img[src="deepsee/loop_24.gif"]
+{
+    display: inline-block;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    width: 16px !important;
+    height: 16px !important;
+    padding-left: 16px !important; 
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    opacity: .5;
+}
+
+img[src="/csp/sys/images/closed.gif"]:hover,
+img[src="/csp/sys/images/up1lvl.jpg"]:hover,
+img[src="/csp/sys/images/vw-list.jpg"]:hover,
+img[src="/csp/sys/images/vw-details.jpg"]:hover,
+img[src="deepsee/ds_plus_16.gif"]:hover,
+img[src="deepsee/loop_24.gif"]:hover,
+.dateTextIcon:hover,
+.modalGroupCloseButton:hover,
+.modalGroupCloseButtonHover,
+.selectorIcon:hover,
+#view_both:hover,
+#view_bus:hover,
+#view_chart:hover,
+#view_columns:hover,
+#view_cube:hover,
+#view_diagram:hover,
+#view_icons:hover,
+#view_list:hover,
+#view_monitor:hover,
+#view_parallel:hover,
+#view_pivot:hover,
+#view_stack:hover,
+#view_tabbed:hover,
+#view_table:hover
+{
     cursor: pointer;
     opacity: .3;
+}
+
+img[src="/csp/broker/images/RtArrow.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/chevron_right/v1/24px.svg);
+}
+
+img[src="/csp/sys/images/closed.gif"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/folder/v1/24px.svg);
 }
 
 img[src="/csp/sys/images/up1lvl.jpg"] {
@@ -108,21 +190,12 @@ img[src="/csp/sys/images/vw-details.jpg"] {
     background: url(https://fonts.gstatic.com/s/i/materialicons/view_list/v1/24px.svg);
 }
 
-
 img[src="/csp/sys/images/vw-list.jpg"] {
     background: url(https://fonts.gstatic.com/s/i/materialicons/view_headline/v1/24px.svg);
 }
 
 img[src="deepsee/close_a_16.gif"] {
-    border: none !important;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 16px;
-    height: 16px;
-    padding-left: 16px;
-    overflow: hidden;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsaipwErPYjsgVOOJqttdQSvYzlxREodSAmXpmxyJ0QnW2elrdvQ&s);
-    background-size: contain;
+    background: url(https://fonts.gstatic.com/s/i/materialicons/close/v1/24px.svg);
 }
 
 img[src="deepsee/close_a_24.png"], img[src="deepsee/close_a_24.png"]:hover {
@@ -147,20 +220,6 @@ img[src="deepsee/ds_forward_24.gif"] {
 
 img[src="deepsee/ds_plus_16.gif"] {
     background: url(https://fonts.gstatic.com/s/i/materialicons/add/v1/24px.svg);
-
-}
-
-img[src="deepsee/ds_plus_16.gif"], img[src="deepsee/loop_24.gif"] {
-    display: inline-block;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-    width: 16px !important;
-    height: 16px !important;
-    padding-left: 16px !important; 
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    border: none !important;
-    opacity: .5;
 }
 
 img[src="deepsee/ds_up_24.gif"] {
@@ -183,6 +242,23 @@ img[src="images/arrow1R.gif"]  {
     background: url(https://fonts.gstatic.com/s/i/materialicons/expand_more/v1/24px.svg);
 }
 
+img[src="images/goto.png"] {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/settings_backup_restore/v1/24px.svg)
+}
+
+img[src="portal/add_24.gif"], img[src="portal/add_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/add/v1/24px.svg);
+}
+
+img[src="portal/loop_24.gif"], img[src="portal/loop_24.gif"]:hover {
+    background: url(https://fonts.gstatic.com/s/i/materialicons/refresh/v1/24px.svg);
+}
+
+img[src="portal/spyware_48.gif"] {
+    display: none;
+}
+
+/* FIXME */
 img[src="images/combobox.png"] {
     border: none !important;
     display: inline-block;
@@ -193,10 +269,6 @@ img[src="images/combobox.png"] {
     overflow: hidden;
     background: url(https://icons-for-free.com/iconfiles/png/512/arrow+drop+down+36px-131987942843237033.png);
     background-size: contain;
-}
-
-img[src="images/goto.png"] {
-    background: url(https://fonts.gstatic.com/s/i/materialicons/settings_backup_restore/v1/24px.svg)
 }
 
 /* TODO
@@ -212,18 +284,6 @@ img[src="portal/paste_24.gif"], img[src="portal/paste_24.gif"]:hover {
     background: url(https://fonts.gstatic.com/s/i/materialicons/search/v1/24px.svg);
 }
 */
-
-img[src="portal/add_24.gif"], img[src="portal/add_24.gif"]:hover {
-    background: url(https://fonts.gstatic.com/s/i/materialicons/add/v1/24px.svg);
-}
-
-img[src="portal/loop_24.gif"], img[src="portal/loop_24.gif"]:hover {
-    background: url(https://fonts.gstatic.com/s/i/materialicons/refresh/v1/24px.svg);
-}
-
-img[src="portal/spyware_48.gif"] {
-    display: none;
-}
 
 input[type="button"] {
     text-transform: uppercase;
@@ -242,6 +302,39 @@ input[type="button"]:focused {
 
 input[type="button"]:hover {
     opacity: .6;
+}
+
+input[type="submit"],
+.button,
+.commandButton,
+.commandButtonGray,
+.commandButtonGray,
+.portalTitleLink,
+a.DetailCommand,
+#btnOK input,
+#EnsException_Details_expando
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    border: none !important;
+    color: #00afab !important;
+    background: transparent !important;
+}
+
+input[type="submit"]:hover,
+.button:hover,
+.commandButton:hover,
+.commandButtonGray:hover,
+.portalTitleLink:hover,
+a.DetailCommand:hover,
+#btnOK input:hover,
+#EnsException_Details_expando:hover
+{
+    cursor: pointer;
+    opacity: .8;
+    color: #00afab !important;
+    background: transparent !important;
 }
 
 input[type="text"], input[type="password"], textarea, select, 
@@ -296,6 +389,10 @@ text.hostLabel {
     text-decoration: none !important;
 }
 
+.EnsExceptionContent {
+    background: transparent !important;
+}
+
 .EvenRow {
     background: transparent !important;
 }
@@ -332,6 +429,10 @@ text.hostLabel {
 
 .OddRow {
     background: #FAFAFA !important;
+}
+
+.PagingButtons {
+    border: none !important;
 }
 
 .PropRect, .PropRectSelected {
@@ -375,6 +476,11 @@ text.hostLabel {
     border: 1px solid #EEE !important;
 }
 
+.busStrip {
+    stroke: none;
+    fill: #ddd;
+}
+
 .calendarDisabled {
     color: #DDD !important;
 }
@@ -396,22 +502,6 @@ text.hostLabel {
     height: 16px;
 }
 
-.commandButton, a.DetailCommand, .commandButtonGray, .button, #btnOK input, input[type="submit"], .portalTitleLink {
-    font-weight: bold;
-    font-size: 12px;
-    border: none !important;
-    color: #00afab !important;
-    text-transform: uppercase;
-    background: transparent;
-    cursor: pointer;
-}
-
-.commandButton:hover, a.DetailCommand:hover, .commandButtonGray:hover, .button:hover, #btnOK input:hover, .portalTitleLink:hover {
-    opacity: .8;
-    color: #00afab;
-    background: transparent;
-}
-
 .commandButtonDisabled, .commandButtonDisabled:hover {
     font-weight: 700;
     border: none !important;
@@ -420,7 +510,7 @@ text.hostLabel {
 }
 
 .commandButton[content="Go"] {
-    background: red !important;
+    background: #F44336 !important;
 }
 
 .contentsOuter, .contentsOuterNoBorder {
@@ -439,9 +529,13 @@ text.hostLabel {
     color: #00afab;
 }
 
+.csMenuBar .csMenuBarItem:first-child > .csActiveMenuItem + div:hover {
+    opacity: .6;
+}
+
 .csMenuBar {
-    border: none;
-    background: none;
+    background: transparent !important;
+    border: none !important;
 }
 
 .csMenuSeparator {
@@ -482,9 +576,13 @@ text.hostLabel {
     padding-top: 2px;
 }
 
-.dgmProductionRunning, .dgmProductionTroubled, .dgmProductionSuspended {
+.dgmProductionRunning, .dgmProductionStopped, .dgmProductionSuspended, .dgmProductionTroubled {
     border: none !important;
     padding: 4px !important;
+}
+
+.dgmProductionTroubled {
+    background: #F44336 !important;
 }
 
 .dragGroup {
@@ -581,7 +679,12 @@ text.hostLabel {
 }
 
 .itemNormal {
+    stroke: none !important;
+}
+
+.itemPartner {
     stroke: none;
+    fill: #ddd;
 }
 
 .itemRectSelect {
@@ -590,6 +693,42 @@ text.hostLabel {
 
 .itemStopped, .itemRunning, .itemDisabled, .itemError, .itemRetrying, .itemInactive {
     stroke: none;
+}
+
+.listBox {
+    width: inherit !important;
+}
+
+.listBoxItem,
+.listBoxItem:active,
+.listBoxItem:focus,
+.listBoxItem:hover,
+.listBoxItemFocus,
+.listBoxItemFocus:active,
+.listBoxItemFocus:focus,
+.listBoxItemFocus:hover,
+.listBoxItemSelected,
+.listBoxItemSelected:active,
+.listBoxItemSelected:focus,
+.listBoxItemSelected:hover
+{
+    background: none !important;
+    outline: none !important;
+}
+
+.listBoxItem:active,
+.listBoxItem:focus,
+.listBoxItem:hover,
+.listBoxItemSelected,
+.listBoxItemSelected:active,
+.listBoxItemSelected:focus,
+.listBoxItemSelected:hover,
+.listBoxItemFocus,
+.listBoxItemFocus:active,
+.listBoxItemFocus:focus,
+.listBoxItemFocus:hover
+{
+    color: #2c2c96 !important;
 }
 
 .lookoutTab {
@@ -612,6 +751,10 @@ text.hostLabel {
 
 .modalGroupCloseButton, .modalGroupCloseButtonHover {
     background: url(https://fonts.gstatic.com/s/i/materialicons/close/v1/24px.svg)
+}
+
+.modalGroupTitle {
+    background: transparent !important;
 }
 
 .modalGroupTitle td {
@@ -719,8 +862,13 @@ text.hostLabel {
 .portalTitle {
     border: none;
     display: flex;
-    padding-top: 12px;
+    padding: 12px 0;
     background: #f5f5f5 !important;
+}
+
+#menuBar.csMenuBar {
+    left: -12px !important;
+    top: 8px !important;
 }
 
 .portalTitleInfoBox {
@@ -1028,7 +1176,7 @@ iframe, table, th, td, h2,
 #command_cmdRecover > nobr,
 #command_cmdRemove > nobr,
 #command_cmdDelete > nobr {
-    color: #f44;
+    color: #F44336;
 }
 
 #componentName {
@@ -1310,4 +1458,3 @@ iframe, table, th, td, h2,
     background: transparent !important;
     fill: transparent !important;
 }
-
